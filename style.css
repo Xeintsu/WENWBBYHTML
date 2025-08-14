@@ -1,0 +1,71 @@
+
+
+:root {
+  /* 定义颜色 */
+  --light-gray: #f0f2f5;        /* 一个淡淡的灰色背景 */
+  --raisin-black: #2a2d32;      /* 主要的深色背景 */
+  --white: #ffffff;             /* 白色文字和元素 */
+  --jet: #34373d;              /* 稍浅一点的深色，用于边框 */
+  --orange-yellow-crayola: #f2c94c; /* 你网站的“高亮色”或“主题色” */
+
+  /* 定义字体 */
+  --ff-poppins: 'Poppins', sans-serif; /* 引入一个叫 Poppins 的字体 */
+
+  /* 定义间距 */
+  --section-padding: 24px;
+}
+
+/* ======================================= */
+/* # 重置样式 (铲墙皮) */
+/* ======================================= */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ff-poppins); /* 把我们定义的字体应用到整个页面 */
+}
+
+body {
+  background-color: var(--light-gray); /* 把我们定义的浅灰色应用为页面背景 */
+}
+
+/* ======================================= */
+/* # 主要布局 (搭建两室一厅) */
+/* ======================================= */
+
+main {
+  display: flex;         /* 开启 Flexbox 布局！这是让左右并排的关键 */
+  gap: 24px;             /* 在侧边栏和主内容区之间增加一些间隙 */
+  padding: 24px;         /* 在整个页面边缘增加一些内边距，不让内容贴边 */
+  align-items: flex-start; /* 让侧边栏和主内容顶部对齐 */
+}
+
+/* ======================================= */
+/* # 侧边栏样式 (装修左边房间) */
+/* ======================================= */
+
+.sidebar {
+  background-color: var(--raisin-black); /* 使用深色背景 */
+  color: var(--white);                   /* 使用白色文字 */
+  padding: var(--section-padding);       /* 使用我们定义的间距作为内边距 */
+  border: 1px solid var(--jet);          /* 添加一个细微的边框 */
+  border-radius: 20px;                   /* 把边角变圆滑，这是“酷炫”的关键 */
+  width: 300px;                          /* 给侧边栏一个固定的宽度 */
+}
+
+/* ======================================= */
+/* # 主要内容区样式 (装修右边房间) */
+/* ======================================= */
+
+.main-content {
+  background-color: var(--raisin-black); /* 使用和侧边栏一样的样式 */
+  color: var(--white);
+  padding: var(--section-padding);
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  width: 100%;                           /* 占据所有剩余的可用宽度 */
+}

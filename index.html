@@ -1,30 +1,135 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY PERSONAL PORTFOLIO</title> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doorear Wen - Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to My Personal Portfolio</h1>
-    </header>
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>This is a brief introduction about myself.</p>
+
+  <main>
+
+    <aside class="sidebar">
+
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./avatar.png" alt="Doorear Wen" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Wen">Doorear Wen</h1>
+          <p class="title">Aspiring Front-End Developer</p>
+        </div>
+      </div>
+
+      <div class="sidebar-info_more">
+        <p>Contact details coming soon...</p>
+      </div>
+
+    </aside>
+
+    <div class="main-content">
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">About</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Resume</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Portfolio</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Blog</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="about active">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a creative individual based in Norrköping, Sweden, currently on an exciting journey to become a front-end developer. I am passionate about building beautiful and user-friendly interfaces, and this portfolio is my very first step in documenting my progress and projects.
+          </p>
+          <p>
+            I'm fascinated by how technology can connect people and ideas. My current focus is to master the fundamentals of web development, starting with HTML, CSS, and Git. I'm eager to dive deep into JavaScript to create dynamic and engaging web experiences.
+          </p>
         </section>
-        <section>
-            <h2>My Projects</h2>
-            <ul>
-                <li>Project 1</li>
-                <li>Project 2</li>
-                <li>Project 3</li>
-            </ul>
+
+        <section class="service">
+          <h3 class="h3 service-title">What i'm doing</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Structural Web Design</h4>
+                <p class="service-item-text">
+                  Building solid and semantic foundations for websites using HTML5.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Creative Styling</h4>
+                <p class="service-item-text">
+                  Learning to bring designs to life with modern CSS, including Flexbox and Grid.
+                </p>
+              </div>
+            </li>
+          </ul>
         </section>
-    </main>
-    <footer>
-        <p>Contact me at: myemail@example.com</p>
-    </footer>
+      </article>
+
+      <article class="resume" hidden>
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <section class="timeline">
+          <p>My resume content is coming soon...</p>
+        </section>
+      </article>
+
+      <article class="portfolio" hidden>
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+        <section class="projects">
+          <p>My portfolio items are coming soon...</p>
+        </section>
+      </article>
+
+      <article class="blog" hidden>
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+        <section class="blog-posts">
+          <p>My blog posts are coming soon...</p>
+        </section>
+      </article>
+
+      <article class="contact" hidden>
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        <section class="mapbox">
+          <p>My contact form is coming soon...</p>
+        </section>
+      </article>
+
+    </div>
+
+  </main>
+
 </body>
-</html>
+
+</html>l
